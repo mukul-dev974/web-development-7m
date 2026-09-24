@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #412331;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/31660221/pexels-photo-31660221.jpeg" width="1500px"  alt="">
+    <img src="./html cours.jpg"   alt="noo image">
+    <picture>
+        <source media="(min-width: 650px)" srcset="./html course.jpg" />
+        <source media="(min-width: 500px)"  srcset="./html course2.jpg" />
+        <img src="./html cours.jpg" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+
+<img src="html course.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="2822,803,2155,478" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="1875,1213,849,618" shape="rect">
+</map>
+<script>
+    function one(){
+        alert("you click on one")}
+    function two(){
+        alert("you click on two")
+    }
+</script>
+
+    
+</body>
+</html>
