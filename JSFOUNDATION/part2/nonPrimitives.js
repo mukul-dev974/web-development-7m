@@ -22,8 +22,10 @@ let anotheruser = ["mukul", true];
 
 // console.log(1 + "1");
 
-let isvalue = "true";
-console.log(number(isvalue));
+let isvalue = "2abc";
+console.log(typeof number(isvalue));
+console.log(number(null));
+
 
 
 
