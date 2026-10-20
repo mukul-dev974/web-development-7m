@@ -70,7 +70,7 @@ for (let l = 0; l < numbers.length; l++) {
 //    takennumber = numbers[l] * 2;
 //    multipliednumbers.push(takennumber);
 
-multipliednumbers.push(numbers[l] * 2);
+multipliednumbers.push(numbers[l] * 2);  
 
 }
 // console.log(multipliednumbers);
