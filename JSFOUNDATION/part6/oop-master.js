@@ -52,6 +52,6 @@ let myCar = new Car("toyota", "cromaly");
 // console.log(myCar.start());
     //  console.log(myCar.drive());
      
-    let vehOne = new vehicle("toyota", "corolla");
+    let vehOne = new vehicle("toyota", "safari");
     console.log(vehOne.make);
     
