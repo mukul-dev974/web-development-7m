@@ -1,51 +1,48 @@
-function person(name, age){
+function Person(name, age) {
   this.name = name;
   this.age = age;
 }
 
-
-function car(make, model){
+function Car(make, model) {
   this.make = make;
   this.model = model;
 }
 
-let mycar = new car ("toyota", "sequoia");
-// console.log(mycar);
+let myCar = new Car("Toyota", "Camry");
+// console.log(myCar);
 
-let mynewcar = new car ("mahindra", "scorpio");
-// console.log(mynewcar);
+let myNewCar = Car("Tata", "Safari");
+// console.log(myNewCar);
 
-
-function tea(type){
+function Tea(type) {
   this.type = type;
-  this.describe = function(){
+  this.describe = function () {
     return `this is a cup of ${this.type}`;
-  }
-  
+  };
 }
-let lemontea = new tea("lemontea");
-// console.log(lemontea.describe());
+let lemonTea = new Tea("lemon tea");
+// console.log(lemonTea.describe());
 
-
-function Animal(species){
+function Animal(species) {
   this.species = species;
 }
 
-Animal.prototype.sound = function(){
+Animal.prototype.sound = function () {
   return `${this.species} makes a sound`;
-}
-let dog = new Animal("dog");
+};
+
+let dog = new Animal("Dog");
 // console.log(dog.sound());
 
 let cat = new Animal("cat");
 // console.log(cat.sound());
 
-function drink(name){
+function Drink(name) {
   if (!new.target) {
-    throw new Error("drink must be called with new error");
-    
+    throw new Error("Drink must be called with new keyword");
   }
   this.name = name;
 }
-let tea = new drink("tea");
-let coffee =  drink("coffee");
+let tea = new Drink("tea");
+let coffee = Drink("coffee");
+ 
