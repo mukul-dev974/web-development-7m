@@ -38,3 +38,49 @@ document.getElementById("changeTextButton").addEventListener("click", function (
             let taskList = document.getElementById("taskList");
             taskList.lastElementChild.remove();
         });
+
+
+        
+        // example 6
+
+        document.getElementById("clickMeButton").addEventListener('dblclick', function(){
+            alert("mukulkaushik");
+        });
+
+        // example 7
+
+        document.getElementById("teaList").addEventListener('click', function(event){
+            if (event.target && event.target.matches(".teaItem")) {
+                alert("you selected: " + event.target.textContent);
+            }
+            
+        });
+
+
+        // Example 8
+
+        document.getElementById("feedbackForm").addEventListener('submit', function(event){
+            event.preventDefault();
+            let feedback = document.getElementById("feedbackInput").value;
+            console.log(feedback);
+            let label = document.querySelector("label.feedbackInput");
+            
+            
+            document.getElementById("feedbackdisplay").textContent = `Feedback is : ${feedback}`;
+             });
+
+
+
+    // Example 9
+
+    document.addEventListener("DOMContentLoaded", function(){
+        document.getElementById("domStatus").textContent = "DOM fully loaded";
+    });
+
+
+    // Example 10
+
+    document.getElementById("toggleHighlight").addEventListener('click', function(){
+        let descriptionText = document.getElementById("descriptionText");
+        descriptionText.classList.toggle("highlight");
+    });
